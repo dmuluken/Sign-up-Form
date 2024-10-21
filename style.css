@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'nova_roundbook';
+    src: url('font/novaround-regular-webfont.woff2') format('woff2'),
+        url('font/novaround-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'norsebold';
+    src: url('font/norse-bold-webfont.woff2') format('woff2'),
+        url('font/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    background-color: #2d2755;
+    flex-wrap: wrap;
+}
+
+.image-left {
+    display: flex;
+    flex-direction: column;
+    background-image: url('images/Space_Man.jpg');
+    flex-grow: 0.3;
+    flex-shrink: 0;
+    background-size: cover;
+    justify-content: center;
+    /* box-shadow: 0 0 8px 8px #2a2356 inset */
+}
+
+.title {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name {
+    font-size: 150px;
+    color: #C252E1;
+    font-family: "norsebold";
+}
+
+.right-side {
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+    min-width: 400px;
+    justify-content: space-evenly;
+}
+
+.top,
+.bottom {
+    flex: 1;
+}
+
+.main {
+    flex: 0.7;
+    background-color: #2a2356;
+    box-sizing: border-box;
+    box-shadow: 0 0 8px 4px #2d2755 inset;
+    padding: 8px 45px;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 45px 0 45px;
+    justify-content: space-between;
+}
+
+.bottom {
+    padding: 16px 45px;
+}
+
+.form-row {
+    display: flex;
+}
+
+label {
+    flex: 1;
+}
+
+p {
+    color: #6EcbF5;
+    margin: 0;
+    padding: 0;
+    font-family: "nova_roundbook";
+}
+
+h1 {
+    color: #b5a1f8;
+    font-family: "nova_roundbook";
+    font-weight: 700;
+}
+
+input {
+    border-color: #C252E1;
+    background-color: #E0D9F6;
+    border-radius: 8px;
+    width: 300px;
+    height: 25px;
+    margin-bottom: 16px;
+    margin-top: 3px;
+    color: #C252E1;
+    font-size: larger;
+    font-weight: 400;
+    font-family: "nova_roundbook";
+}
+
+button {
+    width: 150px;
+    height: 35px;
+    border-radius: 8px;
+    background-color: #644cb3;
+    border-style: none;
+    color: #C252E1;
+    font-family: "nova_roundbook";
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #7752f0;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #C252E1;
+    font-family: "nova_roundbook";
+}
+
+.quote {
+    font-size: 35px;
+    align-self: center;
+    flex: 1;
+}
+
+.author {
+    align-self: flex-end;
+    font-size: 20px;
+    flex: 1;
+}
+
+.invite {
+    align-self: flex-start;
+    font-size: 25px;
+    flex: 1;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: #C252E1;
+    margin-top: 70px;
+}
+
+input:focus {
+    background-color: #d8f1d4;
+    border-style: none;
+}
+
+input:user-invalid {
+    border-color: #ff073a;
+}
+
+input:user-invalid:focus {
+    background-color: rgb(255, 87, 87)
+}
+
+input:valid {
+    border-color: #C252E1;
+}
+
+.pwd {
+    margin-bottom: 2px;
+}
+
+.mismach {
+    opacity: 0;
+    font-size: small;
+}

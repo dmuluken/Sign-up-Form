@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign-up Form</title>
+</head>
+
+<body>
+    <div class="image-left">
+        <div class="title">
+            <div><img src="images/odin-lined.png" width="150px" height="200px"></div>
+            <div class="name">ODIN</div>
+        </div>
+    </div>
+    <div class="right-side">
+        <form action="">
+            <div class="top">
+                <p class="quote">"Any sufficiently advanced technology is indistinguishable from magic."</p>
+                <p class="author">Arthur C. Clarke</p>
+                <p class="invite">Be part of the magic!</p>
+            </div>
+            <div class="main">
+                <h1>Let's do this</h1>
+
+                <div class="form-row">
+                    <label>
+                        <p>FIRST NAME</p>
+                        <input type="text" min="5" max="10" placeholder="John" required>
+                    </label>
+                    <label>
+                        <p>LAST NAME</p>
+                        <input type="text" min="5" max="10" placeholder="Doe" required>
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label>
+                        <p>EMAIL</p>
+                        <input type="email" placeholder="johndoe@mail.com" required>
+                    </label>
+                    <label>
+                        <p>PHONE NUMBER</p>
+                        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="XXX-XXX-XXXX" required>
+                    </label>
+                </div>
+                <div class="form-row">
+                    <label class="password">
+                        <p>PASSWORD</p>
+                        <input type="password" class="pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                            required>
+                        <p class="mismach">*Passwords do not match</p>
+                    </label>
+                    <label>
+                        <p>CONFIRM PASSWORD</p>
+                        <input type="password" class="conpwd" required>
+                    </label>
+                </div>
+            </div>
+            <div class="bottom">
+                <button type="submit">Create Account</button>
+                <p class="message">Already have an account? <a href="#">Log In</a></p>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
